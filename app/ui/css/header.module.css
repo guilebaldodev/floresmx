@@ -44,7 +44,7 @@
     position: absolute;
     right: 0;
     
-    background-color: #0071DC;
+    background-color: #DF1E82;
     border: none;
     border-radius: 100%;
     height: 30px;
@@ -89,7 +89,8 @@
   
   .nav{
     height: 60px;
-    background-color: #E6EFFD;
+    background-color: #fde6f4;
+    background-color: #fde6f5;
     justify-content: space-between;
     display: flex;
     align-items: center;

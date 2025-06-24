@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../admin.module.css';
-import { bullCatalog } from '@/consts';
+import { flowerCatalog } from '@/consts';
 
 const AdminProducts = () => {
+
+
   return (
     <div className={styles['admin-products-container']}>
       <div className={styles['admin-products-titles']}>
@@ -23,10 +25,10 @@ const AdminProducts = () => {
       <div className={styles['admin-table-container']}>
         <div className={styles['admin-table-header']}>
           <div className={styles['admin-table-left']}>
-            <button>
+            <Link href={"/panel-de-control/anadir-producto"}>
               <Image src="/admin/add-icon.svg" alt="Add Icon" width={20} height={20} />
               Agregar
-            </button>
+            </Link>
           </div>
 
           <div className={styles['admin-table-right']}>
@@ -50,8 +52,8 @@ const AdminProducts = () => {
               </tr>
             </thead>
             <tbody>
-              {bullCatalog &&
-                bullCatalog.map((bull, id) => (
+              {flowerCatalog &&
+                flowerCatalog.map((bull, id) => (
                   <tr key={id}>
                     <td>{id + 1}</td>
                     <td>

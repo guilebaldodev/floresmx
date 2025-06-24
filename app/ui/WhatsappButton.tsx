@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhatsAppButton = () => {
 
-  const message = encodeURIComponent('¡Buenos dias! Me gustaría recibir más información sobre los toros.');
+  const message = encodeURIComponent('¡Buenos dias! Me gustaría recibir más información sobre las flores.');
   const whatsAppURL = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${message}`;
 
 

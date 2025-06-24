@@ -1,4 +1,4 @@
-import { bullDescription, emergencyButtonDescription, inflatableDescription, motorDescription } from "./description";
+import {flowerDescription } from "./description";
 
 export interface Product {
   id: number;
@@ -12,193 +12,196 @@ export interface Product {
 
 
 
-
-export const bullCatalog: Product[] = [
+export const flowerCatalog: Product[] = [
+  // RAMOS
   {
     id: 1,
-    titulo: "Toro Extreme",
-    descripcion: bullDescription,
-    precio: 86500,
-    anterior: 91500,
+    titulo: "Ramo de 100 Rosas Rojas",
+    descripcion: flowerDescription,
+    precio: 1800,
+    anterior: 2000,
     img: [
-      "/products/bulls/product-1/product-1-1.webp",
-      "/products/bulls/product-1/product-1-2.webp",
-      "/products/bulls/product-1/product-1-3.webp",
-      "/products/bulls/product-1/product-1-4.webp",
+      "/products/flowers/product-1/product-1-1.webp",
+      "/products/flowers/product-1/product-1-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Ramos",
   },
   {
     id: 2,
-    titulo: "Toro Destructor con Doble Potencia y Seguridad",
-    descripcion: bullDescription,
-    precio: 78500,
+    titulo: "Ramo de Mini Rosas Rosadas y Estate",
+    descripcion: flowerDescription,
+    precio: 550,
     img: [
-      "/products/bulls/product-4/product-4-1.webp",
-      "/products/bulls/product-4/product-4-2.webp",
-      "/products/bulls/product-4/product-4-3.webp",
+      "/products/flowers/product-2/product-2-1.webp",
+      "/products/flowers/product-2/product-2-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Ramos",
   },
-
-    {
+  {
     id: 3,
-    titulo: "Semental para Eventos Masivos y Resistencia Extra",
-    descripcion: bullDescription,
-    precio: 81500,
+    titulo: "Ramo de Mini Rosas Amarillas ",
+    descripcion: flowerDescription,
+    precio: 620,
     img: [
-      "/products/bulls/product-6/product-6-1.webp",
-      "/products/bulls/product-6/product-6-2.webp",
-      "/products/bulls/product-6/product-6-3.webp",
+      "/products/flowers/product-3/product-3-1.webp",
+      "/products/flowers/product-3/product-3-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Ramos",
   },
-
   {
     id: 4,
-    titulo: "Toro Salvaje Edición Limitada",
-    descripcion: bullDescription,
-    precio: 96000,
+    titulo: "Ramo de Rosas Rosa, Lilis y Matsumoto",
+    descripcion: flowerDescription,
+    precio: 610,
     img: [
-      "/products/bulls/product-2/product-2-1.webp",
+      "/products/flowers/product-4/product-4-1.webp",
+      "/products/flowers/product-4/product-4-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Ramos",
   },
+
+  // FLOREROS
   {
     id: 5,
-    titulo: "Toro Feroz con Fuerza Máxima",
-    descripcion: bullDescription,
-    precio: 73500,
-    anterior: 81000,
+    titulo: "Florero de Gerberas y Girasoles",
+    descripcion: flowerDescription,
+    precio: 920,
     img: [
-      "/products/bulls/product-3/product-3-1.webp",
+      "/products/flowers/product-5/product-5-1.webp",
+      "/products/flowers/product-5/product-5-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Floreros",
   },
-
   {
     id: 6,
-    titulo: "Furia Imparable",
-    descripcion: bullDescription,
-    precio: 89000,
-    anterior: 96000,
+    titulo: "Florero Rosas Amarillas",
+    descripcion: flowerDescription,
+    precio: 940,
     img: [
-      "/products/bulls/product-5/product-5-1.webp",
+      "/products/flowers/product-6/product-6-1.webp",
+      "/products/flowers/product-6/product-6-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Floreros",
   },
-
   {
     id: 7,
-    titulo: "Toro Compacto para Espacios Reducidos",
-    descripcion: bullDescription,
-    precio: 76500,
-    anterior: 83000,
+    titulo: "Globo Burbuja de 24",
+    descripcion: flowerDescription,
+    precio: 900,
+    anterior: 100,
     img: [
-      "/products/bulls/product-7/product-7-1.webp",
+      "/products/flowers/product-7/product-7-1.webp",
+      "/products/flowers/product-7/product-7-2.webp",
     ],
-    categoria: "Toro Mecanico",
+    categoria: "Globos",
   },
   {
     id: 8,
-    titulo: "Motor industrial para colchon",
-    descripcion: motorDescription,
-    precio: 4000,
+    titulo: "Bunch de Globos",
+    descripcion: flowerDescription,
+    precio: 1400,
     img: [
-      "/products/bulls/product-8/product-8-3.webp",
-      "/products/bulls/product-8/product-8-2.webp"
+      "/products/flowers/product-8/product-8-1.webp",
     ],
-    categoria: "Accesorios",
+    categoria: "Globos",
   },
+
+  // ROSAS
   {
     id: 9,
-    titulo: "Colchon de toro mecanico",
-    descripcion: inflatableDescription,
-    precio: 45000,
+    titulo: "Caja de Rosas Rojas",
+    descripcion: flowerDescription,
+    precio: 2100,
     img: [
-      "/products/bulls/product-9/product-9-1.webp",
-      "/products/bulls/product-9/product-9-2.webp",
-      "/products/bulls/product-9/product-9-3.webp",
+      "/products/flowers/product-9/product-9-1.webp",
+      "/products/flowers/product-9/product-9-2.webp",
     ],
-    categoria: "Inflables",
+    categoria: "Cajas",
+  },
+
+  // CAJAS DE REGALO
+  {
+    id: 10,
+    titulo: "Caja de Rosas Amarillas",
+    descripcion: flowerDescription,
+    precio: 1950,
+    img: [
+      "/products/flowers/product-10/product-10-1.webp",
+      "/products/flowers/product-10/product-10-2.webp",
+    ],
+    categoria: "Cajas",
+  },
+];
+
+export const categoryOptions = [
+  { value: "Ramos", label: "Ramos" },
+  { value: "Floreros", label: "Floreros" },
+  { value: "Globos", label: "Globos" },
+  { value: "Cajas", label: "Cajas" },
+];
+
+
+export const flowerSales = [
+  {
+    id: 1,
+    titulo: "Ramo de 100 Rosas Rojas",
+    descripcion: "Ramos",
+    precio: 1800,
+    img: "/products/flowers/product-1/product-1-1.webp",
+    estado: "pagado",
+    fecha: "05/06/2025",
+    color: "green",
+  },
+  {
+    id: 5,
+    titulo: "Florero de Gerberas y Girasoles",
+    descripcion: "Floreros",
+    precio: 920,
+    img: "/products/flowers/product-5/product-5-1.webp",
+    estado: "pagado",
+    fecha: "06/06/2025",
+    color: "green",
+  },
+  {
+    id: 7,
+    titulo: "Globo Burbuja de 24",
+    descripcion: "Globos",
+    precio: 900,
+    img: "/products/flowers/product-7/product-7-1.webp",
+    estado: "pendiente",
+    fecha: "06/06/2025",
+    color: "gold",
   },
   {
     id: 10,
-    titulo: "Boton de paro de emergencia",
-    descripcion: emergencyButtonDescription,
-    precio: 400,
-    anterior: 500,
-    img: [
-      "/products/bulls/product-10/product-10-1.webp",
-    ],
-    categoria: "Refacciones",
-  }
+    titulo: "Caja de Rosas Amarillas",
+    descripcion: "Cajas",
+    precio: 1950,
+    img: "/products/flowers/product-10/product-10-1.webp",
+    estado: "cancelado",
+    fecha: "07/06/2025",
+    color: "red",
+  },
 ];
 
 
 
-export const BullCategories=[
-    {
-        nombre:"Toro mecánico",
-        productos:7
-
-    },
-    {
-        nombre:"Refacciones",
-        productos:1
-    },
-    {
-        nombre:"Inflabes",
-        productos:1
-    },
-    {
-        nombre:"Accesorios",
-        productos:1
-    }
-]
-
-
-export const bullSales = [
+export const flowerCategories = [
   {
-    id: 7,
-    titulo: "Toro Compacto para Espacios Reducidos",
-    descripcion: "Toro mecánico",
-    precio: 76500,
-    img: "/products/bulls/product-7/product-7-1.webp",
-    estado: "pagado",
-    fecha: "16/10/2024",
-    color: "green",
+    nombre: "Ramos",
+    productos: 4,
   },
   {
-    id: 8,
-    titulo: "Motor industrial para colchon",
-    descripcion: "Toro mecánico",
-    precio: 4000,
-    img: "/products/bulls/product-8/product-8-2.webp",
-    estado: "pagado",
-    fecha: "16/10/2024",
-    color: "green",
+    nombre: "Floreros",
+    productos: 2,
   },
   {
-    id: 9,
-    titulo: "Colchon de toro mecanico",
-    descripcion: "Toro mecánico",
-    precio: 45000,
-    img: "/products/bulls/product-9/product-9-1.webp",
-    estado: "pendiente",
-    fecha: "20/10/2024",
-    color: "gold",
+    nombre: "Globos",
+    productos: 2,
   },
   {
-    id: 6,
-    titulo: "Furia Imparable",
-    descripcion: "Toro mecánico",
-    precio: 89000,
-    anterior: 96000,
-    img: "/products/bulls/product-5/product-5-1.webp",
-    estado: "Cancelado",
-    fecha: "20/10/2024",
-    color: "red",
+    nombre: "Cajas",
+    productos: 2,
   },
 ];
 
@@ -263,7 +266,7 @@ export const salesPieChart = {
     chart: {
       type: "pie",
     },
-    labels: ['Toro', 'Inflables', 'Accesorios', 'Refacciones'], // Categorías de productos
+  labels: ['Ramos', 'Floreros', 'Globos', 'Cajas'],
     colors: ['#4CAF50', '#FF9800', '#2196F3', '#9C27B0'], // Colores personalizados más vibrantes
     legend: {
       position: "top", // Coloca los labels arriba del gráfico
@@ -301,19 +304,19 @@ export const salesLineChart = {
 
   series: [
     {
-      name: "Toro",
+      name: "Ramos",
       data: [32, 45, 38, 60, 50, 47, 65, 55, 70, 40, 62, 75] // Ventas mensuales para "Toro"
     },
     {
-      name: "Inflables",
+      name: "Floreros",
       data: [23, 28, 22, 34, 29, 51, 40, 57, 30, 69, 52, 63] // Ventas mensuales para "Inflables"
     },
     {
-      name: "Accesorios",
+      name: "Globos",
       data: [12, 15, 20, 18, 30, 25, 43, 37, 42, 38, 55, 50] // Ventas mensuales para "Accesorios"
     },
     {
-      name: "Refacciones",
+      name: "Cajas",
       data: [27, 30, 45, 35, 55, 52, 63, 60, 65, 50, 42, 72] // Ventas mensuales para "Refacciones"
     }
   ]

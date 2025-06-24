@@ -3,9 +3,10 @@ import "./globals.css";
 import { open_sans, fredoka, lexend_deca } from "./ui/fonts";
 
 export const metadata: Metadata = {
-  title: "Toros Mx",
-  description: "Catalogo en linea de Toros Mecanicos",
+  title: "Flores MX",
+  description: "Catálogo en línea de arreglos florales, ramos, floreros y más.",
 };
+
 
 export default function RootLayout({
   children,

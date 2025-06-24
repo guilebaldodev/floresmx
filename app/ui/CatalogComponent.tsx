@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { bullCatalog } from "@/consts";
+import { flowerCatalog } from "@/consts";
 import ProductCard from "@/app/ui/Product";
 import styles from "@/app/(header)/catalogo/page.module.css";
 import Select from "react-select";
 import { useSearchParams } from "next/navigation";
 
 const categoryOptions = [
-  { value: "Toro Mecanico", label: "Toro Mecánico" },
-  { value: "Refacciones", label: "Refacciones" },
-  { value: "Inflables", label: "Inflables" },
-  { value: "Accesorios", label: "Accesorios" },
+  { value: "Ramos", label: "Ramos" },
+  { value: "Floreros", label: "Floreros" },
+  { value: "Globos", label: "Globos" },
+  { value: "Cajas", label: "Cajas" },
 ];
 
 const CatalogPage = () => {
@@ -20,7 +20,7 @@ const CatalogPage = () => {
   const searchQuery = searchParams.get("busqueda")?.toLowerCase() || "";
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const filteredCatalog = bullCatalog.filter((product) => {
+  const filteredCatalog = flowerCatalog.filter((product) => {
     const matchesCategory = selectedCategory
       ? product.categoria === selectedCategory
       : true;

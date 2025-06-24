@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../admin.module.css' // Importar los estilos como un módulo CSS
-import { BullCategories } from '@/consts'
+import { flowerCategories } from '@/consts'
 import { useState } from 'react'
 import CategoryModal from '@/app/ui/CategoryModal'
 
@@ -85,8 +85,8 @@ const AdminCategories = () => {
                 </tr>
               </thead>
               <tbody>
-                {BullCategories &&
-                  BullCategories.map((categorie, id) => (
+                {flowerCategories &&
+                  flowerCategories.map((categorie, id) => (
                     <tr key={id}>
                       <td>{id + 1}</td>
                       <td>{categorie.nombre}</td>

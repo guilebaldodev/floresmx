@@ -70,7 +70,7 @@ const Header = () => {
         <div className={styles["header-title"]}>
           <Image src={"/layout/icon.png"} width={45} height={45} alt="logo" />
           <h3>
-            <Link href={"/"}>TOROS MX</Link>
+            <Link href={"/"}>FLORES MX</Link>
           </h3>
         </div>
 
@@ -143,9 +143,6 @@ const Header = () => {
         <ul>
           <li>
             <Link href={`/catalogo?busqueda=`}>Catalogo de productos</Link>
-          </li>
-          <li>
-            <Link href={"/empresa"}>Empresa</Link>
           </li>
           <li>
             <Link href={"/contacto"}>Contacto</Link>

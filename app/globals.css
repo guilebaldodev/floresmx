@@ -154,7 +154,7 @@ input,button,textarea,select{
 }
 
 .footer{
-  background-color:#0071DC;;
+  background-color:#DF1E82;
   align-self: flex-end;
   display: flex;
   flex-direction: column;

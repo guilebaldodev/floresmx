@@ -101,7 +101,7 @@
     cursor: pointer;
 }
 
-.admin-table-left button,.admin-filters-footer button{
+.admin-table-left button,.admin-filters-footer button,.admin-table-left a{
     border: none;
     padding: 0.5rem 1.4rem;
     color: white;
@@ -554,7 +554,7 @@
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .double_input .input_duo{

@@ -173,7 +173,7 @@ const ContactPage = () => {
             <strong>Dirección:</strong><br />
             CDMX<br /><br />
             <strong>Correo de contacto:</strong><br />
-            torosmx@gmail.com
+            floresmx@gmail.com
           </p>
         </div>
       </div>

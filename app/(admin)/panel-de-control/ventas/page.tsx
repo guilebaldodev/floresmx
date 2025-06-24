@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../admin.module.css'
-import { bullSales } from '@/consts';
+import { flowerSales } from '@/consts';
 import { useState } from 'react';
 import SaleModal from '@/app/ui/SaleModal';
 
@@ -62,8 +62,8 @@ const AdminSales = () => {
               </tr>
             </thead>
             <tbody>
-              {bullSales &&
-                bullSales.map((bull, id) => (
+              {flowerSales &&
+                flowerSales.map((bull, id) => (
                   <tr key={id}>
                     <td>{id + 1}</td>
                     <td>

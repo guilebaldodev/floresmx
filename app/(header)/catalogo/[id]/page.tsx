@@ -4,7 +4,7 @@
 import styles from "./product.module.css";
 import Gallery from "@/app/ui/SwiperGallery";
 import { useParams } from "next/navigation";
-import { bullCatalog } from "@/consts";
+import { flowerCatalog } from "@/consts";
 import { useCartStore } from "@/store/cartStore";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -19,7 +19,7 @@ const ProductDetailPage = () => {
   const addToCart = useCartStore((state) => state.addToCart);
   const [loading, setLoading] = useState(false);
 
-  const product = bullCatalog.find((product) => product.id == parseInt(id));
+  const product = flowerCatalog.find((product) => product.id == parseInt(id));
   
 
   if (!product) return <>....Error</>;

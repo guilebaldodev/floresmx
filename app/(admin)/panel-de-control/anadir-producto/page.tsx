@@ -1,15 +1,14 @@
 'use client'
 import Image from "next/image";
 import styles from '../admin.module.css'
-import { BullCategories } from "@/consts";
-import QuillComponent from "@/app/ui/QuillComponent";
+import Select from "react-select";
+import { useState } from "react";
+import { categoryOptions } from "@/consts";
 
 const AddProduct = () => {
 
-  const categories = BullCategories.map(category => ({
-    value: category.nombre,
-    label: category.nombre
-  }));
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
 
   return ( 
     <>
@@ -47,6 +46,16 @@ const AddProduct = () => {
 
                 </div>
 
+                                <div className={styles.input_duo}>
+                    <label htmlFor="">Categoria</label>
+                                      <Select
+                                  isClearable
+                placeholder="Elige una categoria"
+                options={categoryOptions}
+                onChange={(option) => setSelectedCategory(option?.value ?? null)}
+        />
+                  </div>
+
                 <div className={styles.double_input}>
                   <div className={styles.input_duo}>
                     <label htmlFor="">Precio regular</label>
@@ -62,13 +71,10 @@ const AddProduct = () => {
                 <div className={styles.double_input}>
                   <div className={styles.input_duo}>
                     <label htmlFor="">Medidas del producto</label>
-                    <input type="text" placeholder="Medida en metros"/>
+                    <input type="text" placeholder="Medida en cm"/>
                   </div>
 
-                  <div className={styles.input_duo}>
-                    <label htmlFor="">Categoria</label>
-                    <select></select>
-                  </div>
+  
                 </div>
               </div>
             </div>
@@ -88,7 +94,7 @@ const AddProduct = () => {
                 <div className={styles.upload_items}>
                   <div className={styles.upload_item}>
                     <div className={styles.upload_info}>
-                      <Image src={"/products/bulls/product-1.webp"} height={36} width={36} alt="" />
+                      <Image src={"/products/flowers/product-1/product-1-1.webp"} height={36} width={36} alt="" />
                       <div className={styles.upload_info_texts}>
                         <p className={styles.grey}>producto.png</p>
                         <p>97.KB</p>
@@ -99,7 +105,7 @@ const AddProduct = () => {
 
                   <div className={styles.upload_item}>
                     <div className={styles.upload_info}>
-                      <Image src={"/products/bulls/product-2.webp"} height={36} width={36} alt="" />
+                      <Image src={"/products/flowers/product-1/product-1-2.webp"} height={36} width={36} alt="" />
                       <div className={styles.upload_info_texts}>
                         <p className={styles.grey}>producto2.png</p>
                         <p>97.KB</p>
@@ -110,7 +116,7 @@ const AddProduct = () => {
 
                   <div className={styles.upload_item}>
                     <div className={styles.upload_info}>
-                      <Image src={"/products/bulls/product-3.webp"} height={36} width={36} alt="" />
+                                            <Image src={"/products/flowers/product-2/product-2-1.webp"} height={36} width={36} alt="" />
                       <div className={styles.upload_info_texts}>
                         <p className={styles.grey}>producto3.png</p>
                         <p>97.KB</p>

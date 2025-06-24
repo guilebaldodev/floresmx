@@ -2,75 +2,64 @@ import AccordionItem from "@/app/ui/AccordionItem";
 
 const faqData = [
   {
-    question: '¿Cómo puedo comprar un toro mecánico en Toros Mx?',
-    answer: 'Para comprar un toro mecánico, selecciona el modelo que más te guste y agrégalo al carrito de compras. Una vez en el carrito, serás trasladado a un chat de WhatsApp donde podremos coordinar los detalles de tu pedido, incluyendo el envío y la forma de pago.',
+    question: '¿Cómo puedo hacer un pedido en Flores MX?',
+    answer: 'Selecciona el arreglo o ramo que más te guste y haz clic en "Haz tu pedido". Serás redirigido a un chat de WhatsApp donde coordinaremos los detalles de entrega y pago.',
   },
   {
     question: '¿Qué métodos de pago aceptan?',
-    answer: 'En Toros Mx aceptamos tarjetas de crédito y débito, transferencias bancarias y pagos a través de PayPal. Durante el proceso de compra, podrás elegir la opción que mejor te convenga.',
+    answer: 'Aceptamos pagos mediante transferencia bancaria, tarjetas de débito/crédito y depósitos en OXXO. Durante el proceso por WhatsApp podrás elegir tu método preferido.',
   },
   {
-    question: '¿Realizan envíos a todo México?',
-    answer: 'Sí, enviamos nuestros toros mecánicos a cualquier parte de México. Durante el proceso de compra, podrás ingresar tu dirección y ver los costos de envío aplicables.',
+    question: '¿Realizan entregas a domicilio?',
+    answer: 'Sí, realizamos entregas en toda la ciudad y zonas cercanas. Consulta con nosotros por WhatsApp para verificar la cobertura en tu zona.',
   },
   {
-    question: '¿Cuánto tiempo tarda en llegar mi pedido?',
-    answer: 'El tiempo de entrega varía según tu ubicación, pero generalmente tardamos entre 5 y 10 días hábiles en hacer llegar tu toro mecánico.',
+    question: '¿Con cuánta anticipación debo hacer mi pedido?',
+    answer: 'Recomendamos hacer tu pedido con al menos 24 horas de anticipación para garantizar disponibilidad y puntualidad en la entrega.',
   },
   {
-    question: '¿Puedo devolver un toro mecánico si no estoy satisfecho?',
-    answer: 'No aceptamos devoluciones. Antes de realizar tu compra, te recomendamos asegurarte de que el modelo seleccionado cumple con tus necesidades.',
+    question: '¿Puedo personalizar mi arreglo floral?',
+    answer: '¡Claro! Puedes elegir colores, flores preferidas, incluir tarjetas personalizadas o chocolates. Escríbenos por WhatsApp y te ayudamos a crear algo especial.',
   },
   {
-    question: '¿Cómo puedo comunicarme con Toros Mx?',
-    answer: 'Puedes contactarnos a través de nuestro formulario de contacto en el sitio web, enviando un correo electrónico a soporte@torosmx.com o llamándonos directamente. Estaremos encantados de ayudarte.',
+    question: '¿Tienen servicio para eventos especiales?',
+    answer: 'Sí, realizamos arreglos para bodas, cumpleaños, aniversarios, graduaciones y más. Contáctanos para cotizar según tus necesidades.',
   },
   {
-    question: '¿Los toros mecánicos incluyen garantía?',
-    answer: 'Sí, nuestros toros mecánicos incluyen una garantía limitada que cubre defectos de fabricación. Para más detalles, consulta nuestra página de términos y condiciones.',
+    question: '¿Qué pasa si no estoy en casa cuando llega el pedido?',
+    answer: 'Te contactaremos antes de la entrega. Si no estás, podemos dejarlo con alguien de confianza o reagendar la entrega con un costo adicional.',
   },
   {
-    question: '¿Puedo personalizar mi toro mecánico?',
-    answer: 'Sí, ofrecemos opciones de personalización para que tu toro mecánico se adapte a tus necesidades. Contáctanos para más información sobre colores, diseños y características adicionales.',
+    question: '¿Las flores son naturales?',
+    answer: 'Sí, todos nuestros arreglos se elaboran con flores naturales frescas seleccionadas especialmente para cada ocasión.',
   },
 ];
 
 const QuestionPage = () => {
-
-
-
   return (
     <>
       <div className="questions-container">
         <h2>Preguntas Frecuentes</h2>
-        <p className="question-p">
-          Sabemos que emprender proyecto puede generar muchas dudas, y queremos
-          asegurarnos de que tengas todas las respuestas que necesitas. En
-          nuestra sección de preguntas frecuentes, hemos recopilado las
-          consultas más comunes de nuestros clientes para ayudarte a encontrar
-          rápidamente la información que buscas. 
-          <br />
-          <br />
-          Si tienes alguna pregunta
-          específica o necesitas asistencia personalizada, no dudes en
-          contactarnos. Puedes escribirnos directamente a través de WhatsApp o
-          hacer clic en la seccion de contacto de nuestra pagina.
-        </p>
-      
-      <div className="questions-list">
+<p className="question-p">
+  Esta sección de preguntas frecuentes es totalmente personalizable y está pensada para que tú, como dueño de la florería,
+  puedas responder de forma anticipada las dudas más comunes de tus propios clientes.
+  <br />
+  <br />
+  Aquí podrás agregar, editar o eliminar preguntas como: métodos de pago, tiempos de entrega, cobertura, personalización de arreglos, entre otras. 
+  Esto te ahorrará tiempo y mejorará la experiencia de tus compradores.
+  <br />
+  <br />
+  Si no sabes qué escribir, puedes usar las preguntas que ya vienen como ejemplo en esta demo. Solo ingresa a tu panel de administración y edítalas fácilmente.
+</p>
 
-      <div className="accordion">
-        {faqData.map((item, index) => (
-          <AccordionItem key={index} item={item}></AccordionItem>
-        ))}
+        <div className="questions-list">
+          <div className="accordion">
+            {faqData.map((item, index) => (
+              <AccordionItem key={index} item={item} />
+            ))}
+          </div>
+        </div>
       </div>
-
-      </div>
-      
-
-      </div>
-
-
     </>
   );
 };
